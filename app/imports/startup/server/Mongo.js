@@ -1,5 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Stuffs } from '../../api/stuff/Stuff.js';
+import { Contacts } from '../../api/contact/Contacts.js';
 
 /* eslint-disable no-console */
 
