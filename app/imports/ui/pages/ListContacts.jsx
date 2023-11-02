@@ -1,9 +1,8 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Col, Container, Row, Table } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Stuffs } from '../../api/stuff/Stuff';
-import StuffItem from '../components/StuffItem';
 import LoadingSpinner from '../components/LoadingSpinner';
 import Contact from '../components/Contact';
 
@@ -26,9 +25,7 @@ const ListContacts = () => {
   }, []);
 
   const contacts = [{
-    firstName: 'Philip', lastName: 'Johnson', address: 'POST 307, University of Hawaii',
-    image: 'https://github.com/philipmjohnson.png',
-    description: 'I am a Professor of Information and Computer Sciences at the University of Hawaii, Director ' +
+    firstName: 'Philip', lastName: 'Johnson', address: 'POST 307, University of Hawaii', image: 'https://github.com/philipmjohnson.png', description: 'I am a Professor of Information and Computer Sciences at the University of Hawaii, Director ' +
       'of the Collaborative Software Development Laboratory, and the CEO of OpenPowerQuality.com.',
   },
     {
