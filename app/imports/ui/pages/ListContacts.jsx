@@ -23,7 +23,7 @@ const ListContacts = () => {
       ready: rdy,
     };
   }, []);
-  
+
   return (ready ? (
     <Container className="py-3">
       <Row className="justify-content-center">
